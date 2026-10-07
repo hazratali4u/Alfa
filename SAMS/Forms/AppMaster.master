@@ -1,0 +1,239 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AppMaster.master.cs" Inherits="AppMaster"   %>
+
+     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>SAMS</title>
+    <script type="text/javascript" src="../AjaxLibrary/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="../AjaxLibrary/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="../AjaxLibrary/jquery.tablesorter.js"></script>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Granite/Popup.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/Granite/GridSorter.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"> 
+//	<!-- #include virtual="../AjaxLibrary/VwdCmsSplitterBar.js" -->
+    </script>
+    <script language="javascript" type="text/javascript"><!--
+
+        function splitterOnResize(width) {
+            // do any other work that needs to happen when the 
+            // splitter resizes. this is a good place to handle 
+            // any complex resizing rules, etc.
+
+            // make sure the width is in number format
+            if (typeof width == "string") {
+                width = new Number(width.replace("px", ""));
+            }
+
+            // now do something...
+        }
+    
+// -->
+    </script>
+    <!--[if IE 5]>
+    <style type="text/css">		
+	    .sidebarcontainer td, .sidebarcontainer tr {font-size:smaller;}		
+	    #subnav a {height:1em;}
+        body td, body th {font-size:0.78em;}		
+    </style>
+    <![endif]-->
+    <!--[if IE 7]>
+    <style type="text/css">		        
+       #rightcolumn{margin-right: -152px;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <form id="mainForm" runat="server">
+    <asp:ScriptManager ID="MainScriptManager" runat="server" AsyncPostBackTimeout="300"
+        EnablePartialRendering="true" />
+    <header>
+<ul>
+    <li>Welcome</li>
+    <li><span><asp:Label ID="lblUser" runat="server" Text="User"></asp:Label></span></li>
+    <li>
+      <div><ul>
+      <li><p>&nbsp;</p></li>
+        <li><a href="frmChangePassword.aspx">Change Password</a></li>
+        <li><a href="Logout.aspx">Log Out</a></li>
+      </ul></div>
+      <img src="../images/user_arrow.png" width="10" height="8"></li>
+      <br />
+      <li>Working Date: </li>
+      <li><strong> <asp:Label ID="lblWorkingDate" runat="server"></asp:Label>  </strong></li>
+  </ul>
+<div id="logo">
+    <table >       
+        <tr>
+            <td ><a href="Home.aspx"><img src="../images/logo.jpg" alt=""></a>
+            </td>
+             <td>
+                 <asp:Label ID="lbl" Width="380px" runat="server" Text=""></asp:Label>
+            </td> 
+            <td><img src="../images/logo1.png" alt="">
+            </td>
+        </tr>
+      </table>
+
+</div>
+  <nav> <a href="Home.aspx">Home</a></nav>
+</header>
+    <table style="float: left;" width="100%" height="100%" border="0" cellspacing="0"
+        cellpadding="0">
+        <tr>
+            <td id="tdTree1" width="25%" align="left" valign="top" bgcolor="#FFFFFF">
+                <div id="left">
+                    <div runat="server" id="divTree1" style="height: 100%; padding: 0px;
+                        margin: 0px;">
+                        <img id="mold_left" src="../images/mold-left.png" width="10" height="10">
+                        <h3>
+                            SAMS Menu
+                            <asp:LinkButton ID="imgAddMenu" runat="server" OnClick="imgAddMenu_Click"><img src="../images/level.gif" /> </asp:LinkButton></h3>
+                        <div id="leftMenu">
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <asp:GridView ID="gvMain" runat="server" AutoGenerateColumns="False" CellPadding="0"
+                                        CellSpacing="0" ForeColor="Black" GridLines="None" ShowHeader="false" Width="100%"
+                                        OnRowDataBound="gvMain_RowDataBound" OnRowCommand="gvMain_RowCommand">
+                                        <Columns>
+                                            <asp:TemplateField>
+                                                <ItemTemplate>
+                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <a href="Level.aspx?LevelID=<%# Eval("MODULE_ID")%>&LevelType=1">
+                                                                    <img src="../images/left_navi-icon1_off.png" width="11" height="11"></a>
+                                                            </td>
+                                                            <td width="99%" align="left" valign="top">
+                                                                <a href="Home.aspx?LevelID=<%# Eval("MODULE_ID")%>&LevelType=1">
+                                                                    <%# Eval("MODULE_DESCRIPTION")%></a>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnView" runat="server" CommandName="view" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="View Level" Text="View Level"> 
+                                <img src="../images/view.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnEdit" runat="server" CommandName="edit" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="Edit Level" Text="Edit Level"> 
+                             <img src="../images/edit.gif" width="16" height="16"> 
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td align="right" valign="top">
+                                                                <asp:LinkButton ID="btnDelete" runat="server" CommandName="delete" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="Delete Level" Text="Delete Level" OnClientClick="return confirm('Are you sure? you are going to delete this Level.');"> 
+                            <img src="../images/delete.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                        </Columns>
+                                    </asp:GridView>
+                                    <asp:GridView ID="gvSubMenu1" runat="server" AutoGenerateColumns="False" CellPadding="0"
+                                        CellSpacing="0" ForeColor="Black" GridLines="None" ShowHeader="false" Width="100%"
+                                        OnRowDataBound="gvSubMenu1_RowDataBound" OnRowCommand="gvSubMenu1_RowCommand">
+                                        <Columns>
+                                            <asp:TemplateField>
+                                                <ItemTemplate>
+                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <a href="Level2.aspx?LevelID=<%# Eval("MODULE_ID")%>&LevelType=2">
+                                                                    <img src="../images/left_navi-icon1_off.png" width="11" height="11"></a>
+                                                            </td>
+                                                            <td width="99%" align="left" valign="top">
+                                                                <a href="Home.aspx?LevelID=<%# Eval("MODULE_ID")%>&LevelType=2">
+                                                                    <%# Eval("MODULE_DESCRIPTION")%></a>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnView" runat="server" CommandName="view" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="View Level" Text="View Level"> 
+                        <img src="../images/view.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnEdit" runat="server" CommandName="edit" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="Edit Level" Text="Edit Level"> 
+                        <img src="../images/edit.gif" width="16" height="16"> 
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td align="right" valign="top">
+                                                                <asp:LinkButton ID="btnDelete" runat="server" CommandName="delete" CommandArgument='<%# Eval("MODULE_ID") %>'
+                                                                    ToolTip="Delete Level" Text="Delete Level" OnClientClick="return confirm('Are you sure? you are going to delete this Level.');"> 
+                    <img src="../images/delete.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                        </Columns>
+                                    </asp:GridView>
+                                    <asp:GridView ID="gvSubMenu2" runat="server" AutoGenerateColumns="False" CellPadding="0"
+                                        CellSpacing="0" ForeColor="Black" GridLines="None" ShowHeader="false" Width="100%"
+                                        OnRowDataBound="gvSubMenu2_RowDataBound" OnRowCommand="gvSubMenu2_RowCommand"
+                                        DataKeyNames="MODULE_ID">
+                                        <Columns>
+                                            <asp:TemplateField>
+                                                <ItemTemplate>
+                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <a>
+                                                                    <img src="../images/left_navi-icon1_on.png" width="11" height="11"></a>
+                                                            </td>
+                                                            <td width="99%" align="left" valign="top">
+                                                                <a href="<%# Eval("MODULE_ID")%>?LevelType=3&LevelID=<%# Eval("mid")%>">
+                                                                    <%# Eval("MODULE_DESCRIPTION")%></a>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnView" runat="server" CommandName="view" CommandArgument='<%# Eval("mid") %>'
+                                                                    ToolTip="View Level" Text="View Level"> 
+                    <img src="../images/view.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td width="1" valign="top">
+                                                                <asp:LinkButton ID="btnEdit" runat="server" CommandName="edit" CommandArgument='<%# Eval("mid") %>'
+                                                                    ToolTip="Edit Level" Text="Edit Level"> 
+                        <img src="../images/edit.gif" width="16" height="16"> 
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td align="right" valign="top">
+                                                                <asp:LinkButton ID="btnDelete" runat="server" CommandName="delete" CommandArgument='<%# Eval("mid") %>'
+                                                                    ToolTip="Delete Level" Text="Delete Level" OnClientClick="return confirm('Are you sure? you are going to delete this Level.');"> 
+                    <img src="../images/delete.gif" width="16" height="16">
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                        </Columns>
+                                    </asp:GridView>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td valign="top" align="left" style="width: 5px;">
+            </td>
+            <td id="tdMid1" align="center" valign="top" style="width: 6px;">
+            </td>
+            <td id="tdEdit1" align="left" valign="top" bgcolor="#FFFFFF">
+                <div id="right">
+                    <img id="mold_right" src="../images/mold-right.png" width="10" height="10" />
+                    <asp:ContentPlaceHolder runat="server" ID="mainCopy">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

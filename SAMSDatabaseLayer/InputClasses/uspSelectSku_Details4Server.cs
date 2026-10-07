@@ -1,0 +1,245 @@
+using System;
+using System.Data;
+using SAMSCommon.Classes;
+using SAMSDataAccessLayer.Classes;
+
+
+
+namespace SAMSDatabaseLayer.Classes
+{
+	public class uspSelectSku_Details4Server
+	{
+		#region Private Members
+		private string sp_Name = " uspSelectSku_Details4Server" ;
+		private IDbConnection m_connection;
+		private IDbTransaction m_transaction;
+
+
+		private int m_Dist_ID;
+		private int m_DIST_TYPE_ID;
+		#endregion
+
+
+		#region Public Properties
+		public int Dist_ID
+		{
+			set
+			{
+				m_Dist_ID = value ;
+			}
+			get
+			{
+				return m_Dist_ID;
+			}
+		}
+
+
+		public int DIST_TYPE_ID
+		{
+			set
+			{
+				m_DIST_TYPE_ID = value ;
+			}
+			get
+			{
+				return m_DIST_TYPE_ID;
+			}
+		}
+
+
+
+
+		public IDbConnection  Connection
+		{
+			set
+			{
+				m_connection = value;
+			}
+			get
+			{
+				return m_connection;
+			}
+		}
+		public IDbTransaction  Transaction
+		{
+			set
+			{
+				m_transaction = value;
+			}
+			get
+			{
+				return m_transaction;
+			}
+		}
+		#endregion
+
+
+		#region Constructor
+		public uspSelectSku_Details4Server()
+		{
+
+
+		}
+		#endregion
+
+		#region public Methods
+		public bool  ExecuteQuery()
+		{
+			try
+			{
+			    IDbCommand cmd = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+				cmd.CommandType =  CommandType.StoredProcedure;
+				cmd.CommandText = "uspSelectSku_Details4Server";
+				cmd.Connection =   m_connection;
+				if(m_transaction!=null)
+				{
+					cmd.Transaction = m_transaction;
+				}
+				GetParameterCollection(ref cmd);
+				cmd.ExecuteNonQuery();
+				return true;
+			}
+			catch(Exception e)
+			{
+				throw e;
+			}
+			finally
+			{
+
+
+			}
+		}
+
+
+		public IDataReader ExecuteReader()
+		{
+			try
+			{
+				IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+				command.CommandType = CommandType.StoredProcedure;
+				command.CommandText = "uspSelectSku_Details4Server";
+				command.Connection = m_connection;
+				if(m_transaction!=null)
+				{
+					command.Transaction = m_transaction;
+				}
+				GetParameterCollection(ref command);
+				IDataReader dr = command.ExecuteReader();
+				return dr;
+			}
+			catch(Exception exp)
+			{
+				throw exp;
+			}
+			finally
+			{
+			}
+		}
+
+
+		public DataTable ExecuteTable()
+		{
+			try
+			{
+				IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+				command.CommandType = CommandType.StoredProcedure;
+				command.CommandText = "uspSelectSku_Details4Server";
+				command.Connection = m_connection;
+				if(m_transaction!=null)
+				{
+					command.Transaction = m_transaction;
+				}
+				GetParameterCollection(ref command);
+				IDbDataAdapter da = ProviderFactory.GetAdapter(EnumProviders.SQLClient);
+				da.SelectCommand = command;
+				DataSet ds = new DataSet();
+				da.Fill(ds);
+				return ds.Tables[0];
+			}
+			catch(Exception exp)
+			{
+				throw exp;
+			}
+			finally
+			{
+
+
+			}
+		}
+
+
+		public string ExecuteScalar()
+		{
+			try
+			{
+				IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+				command.CommandType = CommandType.StoredProcedure;
+				command.CommandText = "uspSelectSku_Details4Server";
+				command.Connection = m_connection;
+				if(m_transaction!=null)
+				{
+					command.Transaction = m_transaction;
+				}
+				GetParameterCollection(ref command);
+				object o;
+				o = command.ExecuteScalar();
+
+
+				return o.ToString();
+			}
+			catch(Exception exp)
+			{
+				throw exp;
+			}
+			finally
+			{
+			}
+		}
+
+
+			public void FirstReader(IDataReader dr)
+			{
+				if(dr.Read())
+				{
+					m_Dist_ID= Convert.ToInt32(dr["Dist_ID"]);
+					m_DIST_TYPE_ID= Convert.ToInt32(dr["DIST_TYPE_ID"]);
+				}
+			}
+
+
+		    public void GetParameterCollection(ref IDbCommand cmd)
+		{
+			IDataParameterCollection pparams = cmd.Parameters;
+			IDataParameter parameter ;
+			parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+			parameter.ParameterName = "@Dist_ID" ; 
+			parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Int);
+			if(m_Dist_ID==Constants.IntNullValue)
+			{
+				parameter.Value = DBNull.Value;
+			}
+			else
+			{
+				parameter.Value = m_Dist_ID;
+			}
+			pparams.Add(parameter);
+
+
+			parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+			parameter.ParameterName = "@DIST_TYPE_ID" ; 
+			parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Int);
+			if(m_DIST_TYPE_ID==Constants.IntNullValue)
+			{
+				parameter.Value = DBNull.Value;
+			}
+			else
+			{
+				parameter.Value = m_DIST_TYPE_ID;
+			}
+			pparams.Add(parameter);
+
+
+		}
+		#endregion
+	}
+}

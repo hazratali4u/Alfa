@@ -1,0 +1,493 @@
+
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:20:11
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:20:12
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:20:12
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:23:31
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:23:31
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:23:31
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:53:12
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 11:53:13
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:22:48
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:22:50
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:22:55
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:22:55
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:23:38
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:23:39
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:24:01
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:24:02
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:00
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:01
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:04
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:05
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:20
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:20
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:26:43
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:27:01
+Exception Information:
+System.Data.NoNullAllowedException: Column 'AREA_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:27:02
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:31:35
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:31:35
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:33:23
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:33:23
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:33:37
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:33:37
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:33:37
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:34:41
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:34:41
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:34:41
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:40:42
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:40:42
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:46:30
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:46:30
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 20 Jun 16 12:46:30
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------

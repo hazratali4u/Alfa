@@ -1,0 +1,30 @@
+
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 12 Jun 16 05:00:29
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 12 Jun 16 05:00:29
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 12 Jun 16 05:00:29
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------

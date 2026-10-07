@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppSettings>
+
+  <Server>130.211.183.17</Server>
+   <DBName>SAMS-Alfa</DBName>
+  <DBUser>Builds</DBUser>
+  <DBPassword>PakistanisLove</DBPassword>
+  <DBAuthentication>MSDE</DBAuthentication>
+  
+</AppSettings>

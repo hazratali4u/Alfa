@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="LoginMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SAMS</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Internet Explorer HTML5 enabling code: -->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <style type="text/css">
+        .clear {
+          zoom:1;
+          display: block;
+        }
+        </style>
+        <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <input type="hidden" value="0" name="start">
+            <div>
+                <header>
+  <div id="logo">
+      <table >       
+        <tr>
+            <td ><img src="images/logo.jpg" alt="">
+            </td>
+             <td>
+                 <asp:Label ID="lbl" Width="380px" runat="server" Text=""></asp:Label>
+            </td> 
+            <td><img src="images/logo1.png" alt="">
+            </td>
+        </tr>
+      </table>
+  </div> 
+  <nav> <a href="Default.aspx">Welcome</a> <a href="Login.aspx">Login</a> </nav>
+</header>
+                <asp:Literal ID="litStatus" runat="server"></asp:Literal>
+                <table style="float: left;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="25%" align="left" valign="top" bgcolor="#FFFFFF">
+                            <div id="left">
+                                <img id="mold_left" src="images/mold-left.png" width="10" height="10">
+                            </div>
+                        </td>
+                        <td align="left" valign="top" style="width: 10px;"></td>
+                        <td align="left" valign="top" bgcolor="#FFFFFF">
+                            <div id="right">
+                                <img id="mold_right" src="images/mold-right.png" width="10" height="10">
+                                <div id="right_data">
+                                    <asp:ContentPlaceHolder ID="cpChild" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+    <footer>© 2004-<%= DateTime.Now.Year.ToString() %>, All Rights Reserved, FastServices </footer>
+</body>
+</html>

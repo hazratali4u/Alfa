@@ -1,0 +1,639 @@
+using System;
+using System.Data;
+using SAMSCommon.Classes;
+using SAMSDataAccessLayer.Classes;
+
+
+namespace SAMSDatabaseLayer.Classes
+{
+    public class spInsertSALES_RETURN_DETAIL
+    {
+        #region Private Members
+        private string sp_Name = " spInsertSALES_RETURN_DETAIL";
+        private IDbConnection m_connection;
+        private IDbTransaction m_transaction;
+
+
+        private int m_DISTRIBUTOR_ID;
+        private int m_SKU_ID;
+        private int m_QUANTITY_UNIT;
+        private decimal m_UNIT_PRICE;
+        private decimal m_AMOUNT;
+        private decimal m_STANDARD_DISCOUNT;
+        private decimal m_EXTRA_DISCOUNT;
+        private decimal m_GST_AMOUNT;
+        private decimal m_NET_AMOUNT;
+        private decimal m_TST_AMOUNT;
+        private decimal m_SED_AMOUNT;
+        private DateTime m_TIME_STAMP;
+        private float m_GST_RATE;
+        private long m_SALES_RETURN_ID;
+        private long m_SALES_RETURN_DETAIL_ID;
+        private string m_BATCH_NO;
+        #endregion
+
+
+        #region Public Properties
+        public int DISTRIBUTOR_ID
+        {
+            set
+            {
+                m_DISTRIBUTOR_ID = value;
+            }
+            get
+            {
+                return m_DISTRIBUTOR_ID;
+            }
+        }
+
+
+        public int SKU_ID
+        {
+            set
+            {
+                m_SKU_ID = value;
+            }
+            get
+            {
+                return m_SKU_ID;
+            }
+        }
+
+
+        public int QUANTITY_UNIT
+        {
+            set
+            {
+                m_QUANTITY_UNIT = value;
+            }
+            get
+            {
+                return m_QUANTITY_UNIT;
+            }
+        }
+
+
+        public decimal UNIT_PRICE
+        {
+            set
+            {
+                m_UNIT_PRICE = value;
+            }
+            get
+            {
+                return m_UNIT_PRICE;
+            }
+        }
+
+
+        public decimal AMOUNT
+        {
+            set
+            {
+                m_AMOUNT = value;
+            }
+            get
+            {
+                return m_AMOUNT;
+            }
+        }
+
+
+        public decimal STANDARD_DISCOUNT
+        {
+            set
+            {
+                m_STANDARD_DISCOUNT = value;
+            }
+            get
+            {
+                return m_STANDARD_DISCOUNT;
+            }
+        }
+
+
+        public decimal EXTRA_DISCOUNT
+        {
+            set
+            {
+                m_EXTRA_DISCOUNT = value;
+            }
+            get
+            {
+                return m_EXTRA_DISCOUNT;
+            }
+        }
+
+
+        public decimal GST_AMOUNT
+        {
+            set
+            {
+                m_GST_AMOUNT = value;
+            }
+            get
+            {
+                return m_GST_AMOUNT;
+            }
+        }
+
+
+        public decimal NET_AMOUNT
+        {
+            set
+            {
+                m_NET_AMOUNT = value;
+            }
+            get
+            {
+                return m_NET_AMOUNT;
+            }
+        }
+
+
+        public decimal TST_AMOUNT
+        {
+            set
+            {
+                m_TST_AMOUNT = value;
+            }
+            get
+            {
+                return m_TST_AMOUNT;
+            }
+        }
+
+
+        public decimal SED_AMOUNT
+        {
+            set
+            {
+                m_SED_AMOUNT = value;
+            }
+            get
+            {
+                return m_SED_AMOUNT;
+            }
+        }
+
+
+        public DateTime TIME_STAMP
+        {
+            set
+            {
+                m_TIME_STAMP = value;
+            }
+            get
+            {
+                return m_TIME_STAMP;
+            }
+        }
+
+
+        public float GST_RATE
+        {
+            set
+            {
+                m_GST_RATE = value;
+            }
+            get
+            {
+                return m_GST_RATE;
+            }
+        }
+
+
+        public long SALES_RETURN_ID
+        {
+            set
+            {
+                m_SALES_RETURN_ID = value;
+            }
+            get
+            {
+                return m_SALES_RETURN_ID;
+            }
+        }
+
+
+        public long SALES_RETURN_DETAIL_ID
+        {
+            get
+            {
+                return m_SALES_RETURN_DETAIL_ID;
+            }
+        }
+
+
+        public string BATCH_NO
+        {
+            set
+            {
+                m_BATCH_NO = value;
+            }
+            get
+            {
+                return m_BATCH_NO;
+            }
+        }
+
+
+
+
+        public IDbConnection Connection
+        {
+            set
+            {
+                m_connection = value;
+            }
+            get
+            {
+                return m_connection;
+            }
+        }
+        public IDbTransaction Transaction
+        {
+            set
+            {
+                m_transaction = value;
+            }
+            get
+            {
+                return m_transaction;
+            }
+        }
+        #endregion
+
+
+        #region Constructor
+        public spInsertSALES_RETURN_DETAIL()
+        {
+
+
+        }
+        #endregion
+
+        #region public Methods
+        public bool ExecuteQuery()
+        {
+            try
+            {
+                IDbCommand cmd = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "spInsertSALES_RETURN_DETAIL";
+                cmd.Connection = m_connection;
+                if (m_transaction != null)
+                {
+                    cmd.Transaction = m_transaction;
+                }
+                GetParameterCollection(ref cmd);
+                cmd.ExecuteNonQuery();
+                m_SALES_RETURN_DETAIL_ID = (long)((IDataParameter)(cmd.Parameters["@SALES_RETURN_DETAIL_ID"])).Value;
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+
+
+            }
+        }
+
+
+        public IDataReader ExecuteReader()
+        {
+            try
+            {
+                IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "spInsertSALES_RETURN_DETAIL";
+                command.Connection = m_connection;
+                if (m_transaction != null)
+                {
+                    command.Transaction = m_transaction;
+                }
+                GetParameterCollection(ref command);
+                IDataReader dr = command.ExecuteReader();
+                return dr;
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+            finally
+            {
+            }
+        }
+
+
+        public DataTable ExecuteTable()
+        {
+            try
+            {
+                IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "spInsertSALES_RETURN_DETAIL";
+                command.Connection = m_connection;
+                if (m_transaction != null)
+                {
+                    command.Transaction = m_transaction;
+                }
+                GetParameterCollection(ref command);
+                IDbDataAdapter da = ProviderFactory.GetAdapter(EnumProviders.SQLClient);
+                da.SelectCommand = command;
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                return ds.Tables[0];
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+            finally
+            {
+
+
+            }
+        }
+
+
+        public string ExecuteScalar()
+        {
+            try
+            {
+                IDbCommand command = ProviderFactory.GetCommand(EnumProviders.SQLClient);
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "spInsertSALES_RETURN_DETAIL";
+                command.Connection = m_connection;
+                if (m_transaction != null)
+                {
+                    command.Transaction = m_transaction;
+                }
+                GetParameterCollection(ref command);
+                object o;
+                o = command.ExecuteScalar();
+
+
+                return o.ToString();
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+            finally
+            {
+            }
+        }
+
+
+        public void FirstReader(IDataReader dr)
+        {
+            if (dr.Read())
+            {
+                m_DISTRIBUTOR_ID = Convert.ToInt32(dr["DISTRIBUTOR_ID"]);
+                m_SKU_ID = Convert.ToInt32(dr["SKU_ID"]);
+                m_QUANTITY_UNIT = Convert.ToInt32(dr["QUANTITY_UNIT"]);
+                m_UNIT_PRICE = Convert.ToDecimal(dr["UNIT_PRICE"]);
+                m_AMOUNT = Convert.ToDecimal(dr["AMOUNT"]);
+                m_STANDARD_DISCOUNT = Convert.ToDecimal(dr["STANDARD_DISCOUNT"]);
+                m_EXTRA_DISCOUNT = Convert.ToDecimal(dr["EXTRA_DISCOUNT"]);
+                m_GST_AMOUNT = Convert.ToDecimal(dr["GST_AMOUNT"]);
+                m_NET_AMOUNT = Convert.ToDecimal(dr["NET_AMOUNT"]);
+                m_TST_AMOUNT = Convert.ToDecimal(dr["TST_AMOUNT"]);
+                m_SED_AMOUNT = Convert.ToDecimal(dr["SED_AMOUNT"]);
+                m_TIME_STAMP = Convert.ToDateTime(dr["TIME_STAMP"]);
+                m_SALES_RETURN_ID = Convert.ToInt64(dr["SALES_RETURN_ID"]);
+                m_SALES_RETURN_DETAIL_ID = Convert.ToInt64(dr["SALES_RETURN_DETAIL_ID"]);
+                m_BATCH_NO = Convert.ToString(dr["BATCH_NO"]);
+            }
+        }
+
+
+        public void GetParameterCollection(ref IDbCommand cmd)
+        {
+            IDataParameterCollection pparams = cmd.Parameters;
+            IDataParameter parameter;
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@DISTRIBUTOR_ID";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Int);
+            if (m_DISTRIBUTOR_ID == Constants.IntNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_DISTRIBUTOR_ID;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@SKU_ID";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Int);
+            if (m_SKU_ID == Constants.IntNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_SKU_ID;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@QUANTITY_UNIT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Int);
+            if (m_QUANTITY_UNIT == Constants.IntNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_QUANTITY_UNIT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@UNIT_PRICE";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_UNIT_PRICE == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_UNIT_PRICE;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@AMOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_AMOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_AMOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@STANDARD_DISCOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_STANDARD_DISCOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_STANDARD_DISCOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@EXTRA_DISCOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_EXTRA_DISCOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_EXTRA_DISCOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@GST_AMOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_GST_AMOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_GST_AMOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@NET_AMOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_NET_AMOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_NET_AMOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@TST_AMOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_TST_AMOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_TST_AMOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@SED_AMOUNT";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Money);
+            if (m_SED_AMOUNT == Constants.DecimalNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_SED_AMOUNT;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@TIME_STAMP";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.DateTime);
+            if (m_TIME_STAMP == Constants.DateNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_TIME_STAMP;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@GST_RATE";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.Float);
+            if (m_GST_RATE == Constants.FloatNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_GST_RATE;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@SALES_RETURN_ID";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.BigInt);
+            if (m_SALES_RETURN_ID == Constants.LongNullValue)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_SALES_RETURN_ID;
+            }
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@SALES_RETURN_DETAIL_ID";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.BigInt);
+            parameter.Direction = ParameterDirection.Output;
+            pparams.Add(parameter);
+
+
+            parameter = ProviderFactory.GetParameter(EnumProviders.SQLClient);
+            parameter.ParameterName = "@BATCH_NO";
+            parameter.DbType = ProviderFactory.GetDBType(EnumProviders.SQLClient, EnumDBTypes.VarChar);
+            if (m_BATCH_NO == null)
+            {
+                parameter.Value = DBNull.Value;
+            }
+            else
+            {
+                parameter.Value = m_BATCH_NO;
+            }
+            pparams.Add(parameter);
+
+
+        }
+        #endregion
+    }
+}

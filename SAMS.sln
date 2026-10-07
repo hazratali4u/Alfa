@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSCommon", "SAMSCommon\SAMSCommon.csproj", "{848C4FC7-6E77-4041-925B-4B874B9E7C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSDataAccessLayer", "SAMSDataAccessLayer\SAMSDataAccessLayer.csproj", "{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSDatabaseLayer", "SAMSDatabaseLayer\SAMSDatabaseLayer.csproj", "{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSBusinessLayer", "SAMSBusinessLayer\SAMSBusinessLayer.csproj", "{4CC9CBCE-9BBF-440E-850A-7B51F914792E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SAMS", "SAMS", "{18B877C7-24CA-4CCE-A10E-36E35F81894D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{4CC9CBCE-9BBF-440E-850A-7B51F914792E}|SAMSBusinessLayer.dll;{848C4FC7-6E77-4041-925B-4B874B9E7C4E}|SAMSCommon.dll;{26D8191C-6D6A-4457-BD84-41F5DFAAF9C2}|SAMSDataAccessLayer.dll;{DF27A1C1-7BFD-44DF-98FD-D3598947F58E}|SAMSDatabaseLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SAMS"
+		Debug.AspNetCompiler.PhysicalPath = "SAMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SAMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SAMS"
+		Release.AspNetCompiler.PhysicalPath = "SAMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SAMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50013"
+		SlnRelativePath = "SAMS\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

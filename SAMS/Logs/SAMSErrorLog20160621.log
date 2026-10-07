@@ -1,0 +1,326 @@
+
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 08:55:40
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 08:55:41
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 08:55:41
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 08:59:31
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 08:59:31
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 09:00:31
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 09:00:32
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 09:00:32
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:09:47
+Exception Information:
+System.Data.NoNullAllowedException: Column 'DISTRIBUTOR_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:09:49
+Exception Information:
+System.Data.NoNullAllowedException: Column 'DISTRIBUTOR_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:09:49
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:10:46
+Exception Information:
+System.Data.NoNullAllowedException: Column 'DISTRIBUTOR_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:10:46
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:11:49
+Exception Information:
+System.Data.NoNullAllowedException: Column 'SKU_ID' does not allow nulls.
+   at System.Data.DataColumn.CheckNullable(DataRow row)
+   at System.Data.DataColumn.CheckColumnConstraint(DataRow row, DataRowAction action)
+   at System.Data.DataTable.RaiseRowChanging(DataRowChangeEventArgs args, DataRow eRow, DataRowAction eAction, Boolean fireEvent)
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID)
+   at System.Data.DataTable.AddRecords(Int32 oldRecord, Int32 newRecord)
+   at System.Data.DataTable.ImportRow(DataRow row)
+   at SAMSBusinessLayer.Classes.RptSaleController.LoadPassEntry2(Int32 p_Principal_ID, Int32 p_Distributor_ID, DateTime p_Fromdate, Int32 p_OrderBookerId, Int32 p_Route, Int32 p_DeliveryManId) in F:\My App\Southern Distribution\SAMS\SAMSBusinessLayer\Classes\RptSaleController.cs:line 871
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:11:50
+Exception Information:
+CrystalDecisions.CrystalReports.Engine.LogOnException: Database logon failed. ---> System.Runtime.InteropServices.COMException (0x8004100F): Database logon failed.
+   at CrystalDecisions.ReportAppServer.Controllers.ReportSourceClass.Export(ExportOptions pExportOptions, RequestContext pRequestContext)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   --- End of inner exception stack trace ---
+   at CrystalDecisions.ReportAppServer.ConvertDotNetToErom.ThrowDotNetException(Exception e)
+   at CrystalDecisions.ReportSource.EromReportSourceBase.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.FormatEngine.ExportToStream(ExportRequestContext reqContext)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportOptions options)
+   at CrystalDecisions.CrystalReports.Engine.ReportDocument.ExportToStream(ExportFormatType formatType)
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:12:57
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:12:57
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:26:52
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:26:53
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:26:53
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:33:53
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:33:53
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:41:23
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:41:23
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:57:03
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:57:03
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 10:57:03
+Exception Information:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 18
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 05:08:14
+Exception Information:
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at Forms_Default.Page_Load(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 25
+: ----------------------------------
+Machine Name:: FS-DEV-SAFDAR
+User Name   :: Safdar
+OS Version  :: Microsoft Windows NT 6.2.9200.0
+Date Time   :: 21 Jun 16 05:08:15
+Exception Information:
+System.ObjectDisposedException: Cannot access a closed file.
+   at System.IO.__Error.FileNotOpen()
+   at System.IO.FileStream.Flush()
+   at Forms_Default.Page_Unload(Object sender, EventArgs e) in f:\My App\Southern Distribution\SAMS\SAMS\Forms\Default.aspx.cs:line 95
+: ----------------------------------

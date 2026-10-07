@@ -1,0 +1,479 @@
+@charset "utf-8";
+* {
+	outline:none;
+}
+html, body {
+	height:100%;
+}
+body {
+	margin:0px;
+	background-image: url(../images/bg.png);
+	background-repeat:repeat;
+}
+body, td, label {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #525252;
+}
+img {
+	border:0px;
+}
+
+input, textarea, select {
+	border:1px solid #e1e1e1;
+	color:#525252;
+	font-size:12px;
+    margin-left: 0px;
+}
+a {
+	color:#006699;
+	text-decoration:underline;
+}
+a:hover {
+	color:#3399cc;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin:0px;
+	padding:0px;
+}
+h1 {
+	display:block;
+	padding-bottom:10px;
+	color:#666666;
+	font-size:20px;
+	font-weight:normal;
+}
+h2 {
+	display:block;
+	color:#006699;
+	font-size:17px;
+	font-weight:bold;
+}
+ul {
+	padding-left:10px;
+}
+li {
+	list-style:none;
+	line-height:20px;
+	font-size:15px;
+}
+header, nav, left, right, section, footer {
+	display:block;
+}
+.heading {
+	display:block;
+	color:#006699;
+	font-size:17px;
+	font-weight:bold;
+}
+footer{
+padding:10px;
+float:left;
+
+}
+/****************** Header ******************/
+
+header {
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+	border-bottom:2px solid #3399cc;
+	background-color:#FFF;
+}
+header #logo {
+	/*float:left;*/
+	width:300px;
+	height:80px;
+}
+header #logo img {
+	max-width:300px;
+	max-height:75px;
+}
+header ul {
+	float:right;
+	margin:10px 10px 0px 0px;
+}
+header ul li {
+	display:block;
+	float:left;
+	padding-right:6px;
+	font-size:12px;
+}
+header ul li span{
+	color:#3399cc;
+}
+header ul li div {
+	display:none;
+	position:absolute;
+	width:140px;
+	margin:5px 0px 0px -125px;
+	border-right:1px solid #E1E1E1;
+	border-bottom:1px solid #E1E1E1;
+	cursor:pointer;
+}
+header ul li:hover div {
+	display:block;
+}
+header ul li div ul {
+	width:100%;
+	float:left;
+	margin:0px 0px 0px 0px;
+	padding-left:0px;
+}
+header ul li div ul li {
+	width:100%;
+	padding-right:0px;
+	clear:both;
+}
+header ul li div ul li p{
+	display:block;
+	width:50px;
+	margin-left:120px;
+	border-left:1px solid #E1E1E1;
+}
+header ul li div ul li a{
+	display:block;
+	padding:3px 6px;
+	border-top:1px solid #E1E1E1;
+	border-left:1px solid #E1E1E1;
+	color:#006699;
+	text-decoration:none;
+	background-color:#FFF;
+	
+}
+header ul li div ul li a:hover{
+	color:#FFF;
+	background-color:#3399cc;
+	
+}
+header nav {
+	float:left;
+	width:100%;
+	background-color:#006699;
+	color:#FFF;
+}
+header nav a {
+	display:block;
+	float:left;
+	padding:6px 15px 6px 15px;
+	border-left:1px solid #006699;
+	border-right:1px solid #006699;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+}
+header nav a:hover {
+	border-left:1px solid #005179;
+	border-right:1px solid #005179;
+	background-color:#3399cc;
+	color:#FFF;
+	text-decoration:none;
+}
+/****************** Left ******************/
+#left {
+	display:inline-table;
+	position:relative;
+	z-index:2;
+	float:left;
+	width:100%;
+	height:100%;
+	/*-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+	behavior:url(css/ie-css3.htc);*/
+	background-color:#FFF;
+}
+#left #mold_left {
+	position:absolute;
+	z-index:100;
+	top:0;
+	right:0;/*float:right;*/
+}
+#left h3 {
+	display:block;
+	padding:10px 0px 6px 5px;
+	border-bottom:1px solid #33cccc;
+	color:#666;
+	font-size:16px;
+}
+#left #leftMenu {
+	width:100%;
+}
+#left #leftMenu table {
+	width:100%;
+	border:0px;
+	border-bottom:1px solid #DCD9D6;
+}
+#left #leftMenu tr:hover {
+	background-color:#f3f3f3;
+}
+#left #leftMenu table tr td {
+	padding:5px 4px 0px 4px;
+}
+#left #leftMenu table tr td a {
+	display:block;
+	text-decoration:none;
+}
+#left #leftMenu table tr td a:hover {
+	text-decoration:none;
+}
+/****************** Section ******************/
+
+#right {
+	display:inline-table;
+	position:relative;
+	z-index:2;
+	float:left;
+	width:100%;
+	height:100%;
+	/*-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	behavior: url(css/ie-css3.htc);*/
+	background-color:#FFF;
+}
+#right #mold_right {
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:0;/*float:left;*/
+}
+#bratcome {
+	float:left;
+	padding:20px 0px 0px 10px;
+}
+#bratcome a {
+	display:block;
+	float:left;
+	height:23px;
+	padding:6px 26px 0px 6px;
+	margin:0px 0px 0px 0px;
+	background-image:url(../images/bratcome-arrow.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-color:#e1e1e1;
+	text-decoration:none;
+}
+#bratcome a:last-child {
+	padding:6px 18px 0px 6px;
+	background-image:url(../images/bratcome-arrow2.png);
+}
+#right #right_data {
+	float:left;
+	clear:left;
+	width:98%;
+	padding:20px 0px 0px 10px;
+	min-height:500px;
+}
+#right #right_data ul {
+	padding-bottom:10px;
+}
+#right #right_data fieldset {
+	margin:15px 0px;
+}
+#right #right_data fieldset p {
+	color:#FFF;
+	padding:5px;
+	border:1px solid #3399cc;
+	background-color:#33cccc;
+}
+#right #right_data fieldset legend {
+	color:#006699;
+	font-size:15px;
+	font-weight:bold;
+}
+#right #right_data fieldset legend a{
+	color:#006699;
+	text-decoration:underline;
+}
+#right #right_data fieldset legend a:hover {
+	color:#3399cc;
+}
+
+#right #right_data fieldset form div.right {
+	text-align:right;
+}
+
+/****************** Action ******************/
+
+#action {
+	width:100%;
+	margin-top:50px;
+}
+#action h2 {
+	padding-top:20px;
+	border-bottom:1px solid #3399CC;
+}
+#action p {
+	padding:10px 0px 0px 10px;
+}
+/*#action input, #action textarea, #action select {
+	border:1px solid #e1e1e1;
+	color:#525252;
+	font-size:12px;
+}*/
+#action #tab_done {
+	position:absolute;
+	display:inline-block;
+	margin:19px 0px 0px 500px;
+}
+#action #tab_done a {
+	padding:6px 10px;
+	background-color:#006699;
+	color:#FFF;
+	text-decoration:none;
+}
+#action #tab_done a:hover {
+	background-color:#3399cc;
+	color:#FFF;
+}
+#action .tabs_css {
+	display:inline-block;
+	padding:5px 10px;
+	border:0px solid #e1e1e1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior:url(css/ie-css3.htc);
+	background-color:#006699;
+	cursor:pointer;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+}
+#action .tabs_css:hover {
+	background-color:#3399CC;
+}
+
+/****************** Class's ******************/
+.button, input.button {
+	display:inline-block;
+	padding:5px 10px;
+	border:0px solid #e1e1e1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior:url(css/ie-css3.htc);
+	background-color:#006699;
+	cursor:pointer;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+}
+.button:hover, input.button:hover {
+	background-color:#3399CC;
+}
+.button:focus, input.button:focus {
+	background-color:#3399CC;
+}
+.btn {
+	padding:6px 10px;
+	background-color:#006699;
+	color:#FFF;
+	text-decoration:none;
+	border:none;
+}
+.btn:hover {
+	background-color:#3399cc;
+	color:#FFF;
+}
+.btn:focus {
+	background-color:#3399cc;
+	color:#FFF;
+}
+.tblhead{
+	background:#006699;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding:5px;
+
+}
+.tblRow{
+	background:#F5F5F5;
+	padding:3px;
+}
+#grid{
+border:#CCCCCC solid 1px;
+border-collapse:collapse;
+}
+#grid th{
+background:#006699;
+padding:5px;
+color:#FFFFFF;
+}
+#grid tr td{
+	background:#F5F5F5;
+	padding:3px;
+}
+.help  {
+	position:relative;
+	float:left;
+	cursor:help;
+}
+.help div {
+	display:none;
+	position:absolute;
+	z-index:2;
+	min-width:200px;
+	min-height:50px;
+	padding:5px;
+	margin:-10px 0px 0px 20px;
+	border:1px solid #e1e1e1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior:url(css/ie-css3.htc);
+	background-color:#FFF;
+	cursor:pointer;
+	color:#bdbcbc;
+	font-size:10px;
+	font-weight:bold;
+}
+.help:hover div {
+	display:block;
+}
+.help div img {
+	position:absolute;
+	margin:0px 0px 0px -16px;
+	padding:0px 0px 50px 0px;
+}
+
+.ShowPanel
+{
+    display:block;
+}
+.HidePanel
+{
+    display:none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.Button
+{
+    display:inline-block;
+	padding:5px 10px;
+	border:0px solid #e1e1e1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior:url(css/ie-css3.htc);
+	background-color:#006699;
+	cursor:pointer;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+}
+.Button:hover{
+	background-color:#3399CC;
+}
+
+.Button:focus{
+	background-color:#3399CC;
+}

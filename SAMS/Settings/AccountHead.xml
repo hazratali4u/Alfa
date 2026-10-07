@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AccountHead>
+  <Purchase>151</Purchase>
+  <PurchaseReturn>173</PurchaseReturn>
+  <PurchaseDiscount>174</PurchaseDiscount>
+  <PurchaseScheme>0</PurchaseScheme>
+  <SalesTaxPayable>70</SalesTaxPayable>	
+  <PayabletoPrincipal>94</PayabletoPrincipal>   	 
+  <TransferOut>143</TransferOut>
+  <TransferIN>142</TransferIN>	
+  <AccountReceivable>107</AccountReceivable>
+  <BankDefualtType>43</BankDefualtType>
+  <CashDefualtType>42</CashDefualtType>
+  <CashDefualt>135</CashDefualt>
+  <BankDefualt>10</BankDefualt>
+  <CurrentAssets>11</CurrentAssets>
+  <SaleAccount>46</SaleAccount>	
+  <SaleDiscount>154</SaleDiscount>
+  <SaleScheme>145</SaleScheme>
+  <StockInHand>103</StockInHand>
+  <SaleReturnAccount>152</SaleReturnAccount>
+  <SaleReturnDiscount>154</SaleReturnDiscount>
+  <SaleReturnGST>158</SaleReturnGST>
+  <FreeStock>0</FreeStock>
+  <IncomeTax>127</IncomeTax>
+  <ExpDefualtType>14</ExpDefualtType>	
+  <PeatyCash>136</PeatyCash>		
+  <BuiltyExp>196</BuiltyExp>
+  <mAdnvanceAC>422</mAdnvanceAC>
+  <mBankCollectionAC>421</mBankCollectionAC>
+  <MainCashSale>135</MainCashSale>
+</AccountHead>
